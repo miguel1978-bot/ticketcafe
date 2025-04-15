@@ -1,0 +1,47 @@
+Crear una aplicación web completa, moderna y funcional para la gestión de tickets (que en este caso representarán pedidos en un proceso productivo, "Pedido de empaques para lote de café 2025-04") usando:
+●	Firebase para autenticación y base de datos (anexo código de vinculación con firebase
+●	Visual Studio Code como entorno de desarrollo
+●	GitHub para publicación online
+●	HTML, CSS y JavaScript en un solo archivo
+●	Bibliotecas modernas vía CDN (Bootstrap, FontAwesome, SweetAlert2)
+________________________________________
+🗃️ Estructura de la Aplicación (Páginas o Vistas)
+1.	Login / Registro
+○	Acceso por email y contraseña mediante Firebase Authentication
+2.	Dashboard / Inicio
+○	Panel principal tras login
+○	Botón para crear ticket
+○	Contadores o filtros de tickets por estado
+3.	Lista de Tickets
+○	Muestra pedidos en forma de tarjetas o tabla
+○	Visualiza prioridad, estado, descripción y fecha
+4.	Formulario de Creación de Ticket
+○	Título, descripción, prioridad, tipo de pedido
+○	Ejemplo: "Pedido de empaques para lote 1234"
+5.	Detalle de Ticket (en siguientes versiones)
+○	Visualización extendida y comentarios
+6.	Perfil de Usuario
+○	Nombre del usuario, email, opción de cerrar sesión
+7.	Estadísticas (opcional en siguiente versión)
+○	Gráficas de tickets por estado/prioridad/usuario
+Genera el código anexando el código de vinculación a firebase
+________________________________________
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBoK9EqEjqlWcE3G8c7J8qQM9VBbVkxAiA",
+    authDomain: "ptickets-bf6bd.firebaseapp.com",
+    projectId: "ptickets-bf6bd",
+    storageBucket: "ptickets-bf6bd.firebasestorage.app",
+    messagingSenderId: "252322962252",
+    appId: "1:252322962252:web:dba2fcf9c793bc1d430de9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
